@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="app-container">
-        <nav class="nav-container">
+        <nav id="nav" class="nav-container">
             <section class="nav-container-main">
                 <section class="nav-left">
                     <span class="logo-web-r04hart">R04H Art</span>
@@ -31,9 +31,15 @@
         </nav>
         <main class="main-container">
             <section class="main-content hero-art">
-                <h1>Hero Art</h1>
-                <div class="scroll-back">
-                    <i class="bi bi-chevron-double-up btn-scroll-back"></i>
+                <div class="hero-art-container">
+                    <h1>Hero Art</h1>
+                    <div class="hero-box">
+                        <img src="#" alt="R04H Art img" class="img-r04hart-karya">
+                        <a href="#" class="r04h-art-link">
+                            <span class="nama-karya">Karya 1</span>
+                            <span class="tgl-karya">23 Nov 2026</span>
+                        </a>
+                    </div>
                 </div>
             </section>
             <section id="gallery" class="main-content gallry-container">
@@ -53,5 +59,8 @@
             </section>
         </main>
     </div>
+    <a href="#nav" class="btn-roll-back">
+        <i class="bi bi-chevron-double-up"></i>
+    </a>
 </body>
 </html>
