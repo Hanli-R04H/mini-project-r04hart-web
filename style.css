@@ -6,9 +6,14 @@
 }
 
 html {
-    scroll-margin-top: 70px;
+    scroll-margin-top: 100px;
     scroll-behavior: smooth;
     /* scroll-snap-type: x proximity; */
+}
+
+.negative-art-container {
+    background-color: #EFF0F2;
+
 }
 
 .main-content {
@@ -114,7 +119,7 @@ html {
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    min-height: 60vh;
+    min-height: 65vh;
 }
 
 .hero-art::before {
@@ -122,15 +127,173 @@ html {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background-image: url(https://i.pinimg.com/736x/98/2f/1e/982f1e98e0055195bddf7ea831ccdf82.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3)), url(https://i.pinimg.com/1200x/0b/39/1c/0b391cba9c3ac84246d5f6eeb2697fe3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(8px);
+    filter: blur(3px);
     transform: scale(1.06);
 }
 
 .hero-art-container {
     position: relative;
     z-index: 1;
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    top: 20px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    background: rgba(20, 20, 22, 0.72);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 35%;
+    height: 60vh;
+    border-radius: 5px;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    transition: transform 0.35s ease-in, border 0.35s ease;
+}
+
+.hero-box:hover {
+    transform: scale(1.01);
+    border: 1px solid rgba(204, 239, 52, 0.5);
+}
+
+.img-r04hart-karya {
+    object-fit: cover;
+    width: 95%;
+    height: 85%;
+    margin: 10px;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.r04h-art-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.tgl-karya {
+    color: #FEFEFE;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.nama-karya {
+    color: #DCF235;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.art-galerry-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 80px;
+    gap: 15px;
+}
+
+.art-galerry-container h1 {
+    font-weight: 400;
+    color: #0d0d0d;
+}
+
+.art-galerry-container p {
+    font-size: 18px;
+    max-width: 85ch;
+    font-weight: 300;
+    color: #555555;
+    padding-bottom: 50px;
+}
+
+.art-gallery-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: linear-gradient(to bottom, rgba(52, 67, 3, 0.3)10%,
+    rgb(48, 58, 13, 0.7)50%,
+    rgba(31, 33, 1, 0.5)80%);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 25px 25px;
+    gap: 20px;
+}
+
+/* Buat responsif untuk layar kecil */
+@media (max-width: 1024px){
+    .art-gallery-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .art-gallery-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+.art-gallery-content {
+    display: flex;
+    flex-direction: column;
+    background: rgba(20, 20, 22, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba;
+    align-items: center;
+    width: 280px;
+    height: 50vh;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    transition: transform 0.20s ease-in, border 0.20s ease;
+}
+
+.art-gallery-content:hover {
+    transform: scale(1.015);
+    border: 1px solid rgba(204, 239, 52, 0.5);
+}
+
+.img-art-gallery {
+    display: block;
+    width: 95%;
+    height: 85%;
+    margin: 8px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.info-art-gallery {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.nama-art-gallery {
+    font-size: 15px;
+    font-weight: 400;
+    color: #DCF235;
+}
+
+.tgl-art-gallery {
+    font-size: 13px;
+    font-weight: 300;
+    color: #EFF0F2;
 }
