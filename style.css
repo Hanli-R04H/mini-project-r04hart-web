@@ -6,16 +6,17 @@
 }
 
 html {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 70px;
     scroll-behavior: smooth;
-    /* scroll-snap-type: x proximity; */
+    /* scroll-snap-type: y proximity; */
 }
 
 .main-content {
-    min-height: 70vh;
+    min-height: 60vh;
     top: 0;
     left: 0;
     margin: 0;
+    /* scroll-snap-align: start; */
 }
 
 .btn-roll-back {
@@ -338,7 +339,6 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.2);
     width: 350px;
     height: 100%;
-    border: none;
     border-radius: 8px;
     overflow: hidden;
     padding: 10px;
@@ -379,4 +379,91 @@ html {
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
+}
+
+.process-container {
+    background-color: #FEFEFE;
+    padding-bottom: 20px;
+}
+
+.process-art-container h1 {
+    font-weight: 400;
+    color: #0D0D0D;
+}
+
+.process-art-container p {
+    font-weight: 300;
+    color: #555555;
+    margin-top: 10px;
+}
+
+.process-art-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: none;
+    padding: 50px;
+    /* background-color: #555555; */
+}
+
+.box-process-art {
+    background-color: transparent;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* sesuaikan dengan lebar container utama halamanmu */
+    overflow-x: auto;
+    /* scroll-snap-type: x proximity; */
+    scroll-behavior: smooth;
+    padding: 20px 10px 20px;
+}
+
+.box-card-process {
+    flex: 0 0 calc((100% - 60px) / 4); /* 100% dibagi 4 card, dikurangi 3 celah gap (3 x 20px = 60px) */
+    height: 40vh;
+    background-color: #0D0D0D;
+    border-radius: 5px;
+    /* scroll-snap-align: start; */
+    overflow: hidden;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    transition: transform 0.30s ease-in, border 0.30s ease;
+}
+
+.box-card-process:hover {
+    transform: scale(1.01);
+    border: 1px solid #DCF235;
+}
+
+@media (max-widht: 900px) {
+    .box-card-process {
+        flex: 0 0 calc((100% - 20px) /2); /* 2 card terlihat di tablet */
+    }
+}
+
+@media (max-widht: 550px) {
+    .box-card-process {
+        flex: 0 0 85%; /*untuk ukuran hp 1 card utama*/
+    }
+}
+
+.img-process-draw {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.box-icon-geser {
+    display: flex;
+    font-size: 30px;
+    gap: 15px;
+    box-shadow: 0 0 10px rgba(20, 20, 22, 0.72);
+    padding: 0 10px;
+    border-radius: 10px;
+    margin-top: 5px;
 }
