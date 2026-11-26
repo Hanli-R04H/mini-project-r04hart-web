@@ -12,7 +12,7 @@ html {
 }
 
 .main-content {
-    min-height: 60vh;
+    min-height: 40vh;
     top: 0;
     left: 0;
     margin: 0;
@@ -466,4 +466,70 @@ html {
     padding: 0 10px;
     border-radius: 10px;
     margin-top: 5px;
+}
+
+.about-container {background-color: #EFF0F2;}
+.contact-container {background-color: #EFF0F2}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+}
+
+.contact-us-container-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-container-box h1 {
+    font-weight: 400;
+    color: #0d0d0d;
+    padding-bottom: 10px;
+}
+
+.main-box-contact-us {
+    display: flex;
+    background-color: #0d0d0d;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+.contact-us-info-box {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    width: 80%;
+    height: 25vh;
+    border-radius: 3px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-contact-us {
+    padding: 10px;
+    color: #DCF235;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.contact-us-info-box p {
+    color: #0D0D0D;
+    font-weight: 300;
+}
+
+.contact-us-icon {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    height: 25vh;
+    flex: 1;
+    border-radius: 3px;
 }
