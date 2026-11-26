@@ -502,7 +502,7 @@ html {
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    width: 80%;
+    width: 75%;
     height: 25vh;
     border-radius: 3px;
     padding: 15px;
@@ -519,7 +519,7 @@ html {
 }
 
 .contact-us-info-box p {
-    color: #0D0D0D;
+    color: #EFF0F2;
     font-weight: 300;
 }
 
@@ -532,4 +532,42 @@ html {
     height: 25vh;
     flex: 1;
     border-radius: 3px;
+}
+
+.contact-icon-us {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.icon-contact-us {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-contact {
+    display: flex;
+    background-color: #DCF235;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.25s ease, border 0.25s ease;
+}
+
+.icon-contact:hover {
+    transform: scale(1.11);
+    color: #EFF0F2;
+    background-color: #0d0d0d;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.info-icon {
+    font-size: 13px;
+    color: #EFF0F2;
 }
